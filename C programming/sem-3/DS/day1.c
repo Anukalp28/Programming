@@ -113,22 +113,83 @@
 // }
 
 
-//Q2 WAP to insert new element in array specified position
-#include <stdio.h>
-int mina(){
-    int arry[] = {5,6,10,12};
-    int size = sizeof(arry)/sizeof(arry[1]);
-    int n = 100;
-    int position = 2;
-    for (int i=0;i<size;i++){
-        int a;
-        if (i==position){
-            a = arry[i];
-            a[i] = n;
-            for (int j=i)
-        }
+// //Q2 WAP to insert new element in array specified position
+// #include <stdio.h>
+// int main(){
+//     int array[] = {5,6,10,12,13,14};
+//     int size = sizeof(array)/sizeof(array[0]);
+//     int n = 100;
+//     int position = 2;
+    
+//     int temp ;
+//     int temp2;
+//     for (int i=position;i<size+1;i++){
+    
+//         if(i==position){
+//             temp = array[i];
+//             array[i] = n;
+//         }
+//         else{
+//             temp2 = array[i];
+//             array[i] = temp;
+//             temp=temp2;
+//         }
+//     }
 
+//     size++;
+//     for (int i=0;i<size;i++){
+//         printf("%d ",array[i]);
+//     }
+// }
+
+
+// 5. Implement linear search to find the first occurrence of a given element in an array.
+
+// #include<stdio.h>
+// int main(){
+//     int array[] = {5,6,10,12,13,1,14};
+//     int size = sizeof(array)/sizeof(array[0]);
+    
+//     int search = 10;
+    
+//     int index;
+//     int flg =0;
+    
+//     for(int i=0;i<size;i++){
+//         if(array[i]==search){
+//             index = i;
+//             flg = 1;
+//             break;
+//         }
+//     }
+//     if (flg){
+//         printf("Element Found at index no.: %d",index);
+//     }
+//     else{
+//         printf("Element Not Found");
+//     }
+// }
+
+
+// 6. Implement sparse matrix using array. Description of program:
+//  Read a 2D array from the user.
+//  Store it in the sparse matrix form, use array of structures.
+//  Print the final array.
+
+#include<stdio.h>
+int main(){
+    int matrix[3][3];
+    int n=3;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&matrix[i][j]);
+        }
     }
 
-
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("%d ",matrix[i][j]);
+        }
+        printf("\n");
+    }
 }
