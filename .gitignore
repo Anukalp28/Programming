@@ -1,0 +1,27 @@
+# --- Ignore Python Clutter ---
+.venv/
+venv/
+ENV/
+__pycache__/
+*.pyc
+
+# --- Ignore Editor / IDE Settings ---
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# --- Ignore Compiled C / C++ Binaries ---
+# This stops heavy executable files from cluttering your repo
+*.exe
+*.out
+*.o
+*.obj
+
+# --- Ignore Java Compiled Files ---
+*.class
+*.jar
+*.war
