@@ -1,0 +1,3 @@
+Hello! This is line one inside the file.
+Python handles file handling very efficiently.
+End of the sample data text document.

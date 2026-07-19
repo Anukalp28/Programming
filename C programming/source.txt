@@ -1,0 +1,21 @@
+7. Implementation of function and recursion using C program
+Q1. Factorial using recursion
+Q2. Fibonacci series using recursion
+Q3. GCD (Greatest common divisor) using recursion
+Q4. Sum of natural numbers using recursion
+Q5. Check palindrome using recursion
+8. Pointers using C programming
+Q1.Pointer basics program
+Q2.Pointer arithmetic
+Q3.Pointer to function
+Q4.Dynamic Memory Allocation(malloc)
+Q5.Passing array to function using pointers
+9. Implementation of structure in C
+Q1. Student information using structure
+Q2. Rectangle area using structure
+Q3. Book information using structure
+Q4. Employee details using structure
+Q5. Temperature conversion using structure
+10.File handling using C
+Q1. C program to create a file and write data into file.
+Q2. C program to copy contents of one file to ano

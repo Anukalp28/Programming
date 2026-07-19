@@ -1,0 +1,79 @@
+Output 1 of exp 6
+The sum of array elements is 15
+Output 2 of exp 6
+Maximum element in array is 50
+Output 3 of exp 6
+The array is palindrome
+
+Output 4 of exp 6
+Enter 10 numbers:1 2 3 4 5 6 7 8 9 10
+Even numbers is 5 & odd number is 5
+
+Output 5 of exp 6
+10 50 20 60 0 30 0 40 0 0
+
+
+Output 1 of exp 7
+Enter a no.:5
+Function of 5 is 120
+
+Output 2 of exp 7
+Enter a no.:10
+1 1 2 3 5 8 13 21 34 55
+
+Output 3 of exp 7
+GCD of 48 and 18 is 6
+
+Output 4 of exp 7
+Enter a no.:10
+Sum of natural numbers up to 10 is 55
+
+Output 5 of exp 7
+radar is a palindrome
+
+Output 1 of exp 8
+Value of variable: 10
+Address of variable: 0061FF18
+Value using pointer: 10
+Address stored in pointer: 0061FF18
+
+Output 2 of exp 8
+Element 0: 10 at address 0061FF0C
+Element 1: 20 at address 0061FF10
+Element 2: 30 at address 0061FF14
+
+Output 3 of exp 8
+Hello from the function pointer!
+
+Output 4 of exp 8
+Dynamically allocated array: 1 2 3 4 5 
+
+Output 5 of exp 8
+Array elements: 1 2 3 4 5 
+
+Output 1 of exp 9
+Student Name: Anukalp
+Roll Number: 1142
+CGPA: 8.86
+
+Output 2 of exp 9
+Area of Rectangle: 62.50 sq units
+
+Output 3 of exp 9
+Book: C Programming
+Author: Dennis Ritchie
+Pages: 270
+
+Output 4 of exp 9
+ID: 101 | Name: Raj Kumar | Salary: 55000.50
+
+Output 5 of exp 9
+Enter temperature in Celsius: 33
+33.00┬░C is equal to 91.40┬░F
+
+Output 1 of exp 10
+Enter text to write to the file: Anukalp
+Data successfully written to lab_work.txt
+
+Output 2 of exp 
+File copied successfully!
