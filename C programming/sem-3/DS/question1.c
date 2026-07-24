@@ -21,6 +21,7 @@ void main(){
     int pmax=0;
     int cmax=0;
     int mmax=0;
+    // time&space complexcity O(n/3)
     for(int i=0;i<r;i++){
         if(marks[i][0]>pmax){
             pmax = marks[i][0];

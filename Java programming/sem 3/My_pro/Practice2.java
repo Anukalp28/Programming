@@ -1,5 +1,5 @@
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // Reading Two Numbers and Adding Them
 
@@ -21,7 +21,9 @@ import java.util.Scanner;
 // }
 
 // Taking Multiple Types of Input
-// import java.util.Scanner;
+
+
+import java.util.Scanner;
 public class Practice2{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -34,10 +36,10 @@ public class Practice2{
         String xstr = sc.nextLine();
 
         System.out.println("given inputs are");
-        System.err.println(xint);
-        System.err.println(xfloat);
-        System.err.println(xstr);
-        System.err.println(xboo);
+        System.out.println(xint);
+        System.out.println(xfloat);
+        System.out.println(xstr);
+        System.out.println(xboo);
 
     }
 
