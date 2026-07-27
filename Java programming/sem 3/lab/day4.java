@@ -236,9 +236,7 @@ public class day4{
         }
         else{
             System.out.println("Not a Perfect Square");
-
         }
-
         sc.close();
     }
 }
