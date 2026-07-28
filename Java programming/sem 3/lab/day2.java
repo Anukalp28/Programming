@@ -74,57 +74,57 @@
 //      Details: Name , enrollment, branch, enter 5 subject name 
 //      Find the total and avg marks
 
-// import java.util.Scanner;
-// public class day2{
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         System.out.print("Enter Name:");
-//         String name = sc.nextLine();
-
-//         System.out.print("Enter Enrolment no:");
-//         String Enro = sc.nextLine();
-
-//         System.out.print("Enter Branch:");
-//         String Breanch = sc.nextLine();
-
-//         System.out.println("Enter 5 subject Marks:");
-//         Float n1 = sc.nextFloat();
-//         Float n2 = sc.nextFloat();
-//         Float n3 = sc.nextFloat();
-//         Float n4 = sc.nextFloat();
-//         Float n5 = sc.nextFloat();
-
-//         Float total = n1+n2+n3+n4+n5;
-//         Float avg = (n1+n2+n3+n4+n5)/5;
-//         // Float per = ((n1+n2+n3+n4+n5)/500)*100;
-    
-
-//         System.out.println("Total Marks:"+total);
-//         System.out.println("Avg Marks:"+avg);
-//         // System.out.println("Percentage Marks:"+per+"%");
-        
-//     }
-// }
-
-// Q6 Write a Java program to swap two numbers using bitwise operators.
 import java.util.Scanner;
 public class day2{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = 20;
-        int b = 30;
+        System.out.print("Enter Name:");
+        String name = sc.nextLine();
 
-        System.out.println("a="+a+" b="+b);
-        // int c = a;
-        // a=b;
-        // b=c;
+        System.out.print("Enter Enrolment no:");
+        String Enro = sc.nextLine();
 
-        a = a ^ b; // Step 1
-        b = a ^ b; // Step 2
-        a = a ^ b; // Step 3
+        System.out.print("Enter Branch:");
+        String Breanch = sc.nextLine();
 
-        System.out.println("a="+a+" b="+b);
+        System.out.println("Enter 5 subject Marks:");
+        Float n1 = sc.nextFloat();
+        Float n2 = sc.nextFloat();
+        Float n3 = sc.nextFloat();
+        Float n4 = sc.nextFloat();
+        Float n5 = sc.nextFloat();
+
+        Float total = n1+n2+n3+n4+n5;
+        Float avg = (n1+n2+n3+n4+n5)/5;
+        // Float per = ((n1+n2+n3+n4+n5)/500)*100;
+    
+
+        System.out.println("Total Marks:"+total);
+        System.out.println("Avg Marks:"+avg);
+        // System.out.println("Percentage Marks:"+per+"%");
+        
     }
 }
+
+// Q6 Write a Java program to swap two numbers using bitwise operators.
+// import java.util.Scanner;
+// public class day2{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a = 20;
+//         int b = 30;
+
+//         System.out.println("a="+a+" b="+b);
+//         // int c = a;
+//         // a=b;
+//         // b=c;
+
+//         a = a ^ b; // Step 1
+//         b = a ^ b; // Step 2
+//         a = a ^ b; // Step 3
+
+//         System.out.println("a="+a+" b="+b);
+//     }
+// }
 
 
