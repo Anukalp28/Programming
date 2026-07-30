@@ -124,6 +124,30 @@
 // }
 
 // Q4 Write a Java Program to check if a Number is Positive or Negative.
+
+import java.util.Scanner;
+public class day4{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number (0-9):");
+        int n = sc.nextInt();
+        String word = switch (n) {
+                case 0 -> "Zero";
+                case 1 -> "One";
+                case 2 -> "Two";
+                case 3 -> "Three";
+                case 4 -> "Four";
+                case 5 -> "Five";
+                case 6 -> "Six";
+                case 7 -> "Seven";
+                case 8 -> "Eight";
+                case 9 -> "Nine";
+                default -> "Error: Not a single-digit number (0-9).";
+            };
+            System.out.println(word);
+    }
+}
+
 // import java.util.Scanner;
 // public class day4{
 //     public static void main(String[] args){
@@ -218,25 +242,28 @@
 //     }
 // }
 
+
+
+
 // Q7 Write a Java Program to check if a Given Number is Perfect Square.
 
-import java.util.Scanner;
-public class day4{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a No.:");
+// import java.util.Scanner;
+// public class day4{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter a No.:");
 
-        int n = sc.nextInt();
-        // int n = 626;
-        int int_sqrt = (int)Math.sqrt(n);
-        int check_sqrt = int_sqrt*int_sqrt;
+//         int n = sc.nextInt();
+//         // int n = 626;
+//         int int_sqrt = (int)Math.sqrt(n);
+//         int check_sqrt = int_sqrt*int_sqrt;
 
-        if(n == check_sqrt ){
-            System.out.println("Perfect Square");
-        }
-        else{
-            System.out.println("Not a Perfect Square");
-        }
-        sc.close();
-    }
-}
+//         if(n == check_sqrt ){
+//             System.out.println("Perfect Square");
+//         }
+//         else{
+//             System.out.println("Not a Perfect Square");
+//         }
+//         sc.close();
+//     }
+// }
