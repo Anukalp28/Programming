@@ -129,32 +129,84 @@
 // }
 // 4. Write a program in C to print the first 50 natural numbers using recursion.
 
+// #include <stdio.h>
 
-
-#include <stdio.h>
-
-void printNaturalNumbers(int n) {
-    // base case
-    if (n > 50) {
-        return;
-    }
-    printf("%d ", n);
+// void printNaturalNumbers(int n) {
+//     // base case
+//     if (n > 50) {
+//         return;
+//     }
+//     printf("%d ", n);
     
-    printNaturalNumbers(n + 1);
-}
+//     printNaturalNumbers(n + 1);
+// }
 
-int main() {
-    printf("The first 50 natural numbers are:\n");
+// int main() {
+//     printf("The first 50 natural numbers are:\n");
 
-    printNaturalNumbers(1);
+//     printNaturalNumbers(1);
     
-    // printf("\n");
-    return 0;
-}
+//     // printf("\n");
+//     return 0;
+// }
 
 
 
 // 5. Write a program in C to find the sum of digits of a number using recursion.
+// #include<stdio.h>
+// int digit_sum(int n){
+//     if(n>0){
+//         return n%10 + digit_sum(n/10);
+//     }
+//     else{
+//         return 0;
+//     }
+// }
+// int main(){
+//     int n;
+//     printf("Enter a no: ");
+//     scanf("%d",&n);
+//     int s = digit_sum(n);
+//     printf("%d",s);
+
+// }
 // 6. Write a program in C to print the Fibonacci Series using recursion.
 // 7. Write a program in C to find the Factorial of a number using recursion.
+// #include<stdio.h>
+// int fac(int x){
+//     if(x>1){
+//         return x*fac(x-1);
+//     }
+//     else{
+//         return 1;
+//     }
+// }
+
+// int main(){
+//     int n;
+//     printf("Enter a no: ");
+//     scanf("%d",&n);
+//     int f = fac(n);
+//     printf("Factorial of a no: %d",f);
+// }
 // 8. Write a program in C to print even or odd numbers in a given range using recursion.
+#include<stdio.h>
+void even_or_odd(int i,int j){
+    if(i<j){
+        if(i%2==0){
+            printf("Even %d\n",i);
+            even_or_odd(i+1,j);
+        }
+        if(i%2!=0){
+            printf("odd  %d\n",i);
+            even_or_odd(i+1,j);
+
+        }
+    }
+}
+int main(){
+    int start = 20;
+    int stop = 100;
+    even_or_odd(start,stop);
+
+}

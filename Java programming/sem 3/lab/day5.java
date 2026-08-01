@@ -64,7 +64,6 @@ public class day5{
             a=b;
             b=c;
         }
-
     }
 }
 
