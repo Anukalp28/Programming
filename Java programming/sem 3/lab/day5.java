@@ -1,5 +1,5 @@
-// Transcribed Questions
-// Q1 Write a Java Program to Find nth Prime Number.
+// // Transcribed Questions
+// // Q1 Write a Java Program to Find nth Prime Number.
 // public class day5{
 //     public static void main(String[] args) {
 //         // int n = 5;
@@ -16,7 +16,7 @@
 //         }
 //     }
 // }
-// Q2 Write a Java Program to Find Strong Number.
+// // Q2 Write a Java Program to Find Strong Number.
 // import java.util.Scanner;
 // public class day5{
 //     public static void main(String[] args){
@@ -47,28 +47,28 @@
 
 
 
-// Q3 Write a Java Program to Fibonacci Series in Java.
-import java.util.Scanner;
-public class day5{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int n,a=0,b=1,c;
-        System.out.print("Enter no of terms:");
-        n = sc.nextInt();
-        if (n>=1) System.out.print(a+" ");
-        if (n>=2) System.out.print(b+" ");
+// // Q3 Write a Java Program to Fibonacci Series in Java.
+// import java.util.Scanner;
+// public class day5{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int n,a=0,b=1,c;
+//         System.out.print("Enter no of terms:");
+//         n = sc.nextInt();
+//         if (n>=1) System.out.print(a+" ");
+//         if (n>=2) System.out.print(b+" ");
         
-        for (int i=1;i<n;i++){
-            c = a+b;
-            System.out.print(c+" ");
-            a=b;
-            b=c;
-        }
-    }
-}
+//         for (int i=1;i<n;i++){
+//             c = a+b;
+//             System.out.print(c+" ");
+//             a=b;
+//             b=c;
+//         }
+//     }
+// }
 
 
-// Q4 Write a Java Program to Print Pattern in Java.
+// // Q4 Write a Java Program to Print Pattern in Java.
 //         *         
 //       * * *       
 //     * * * * *     
@@ -106,7 +106,7 @@ public class day5{
 //     }
 // }
 
-// Q5 Write a Java Program to Armstrong Number in Java.
+// // Q5 Write a Java Program to Armstrong Number in Java.
 // import java.util.Scanner;
 // public class day5{
 //     public static void main(String[] args){
@@ -141,7 +141,7 @@ public class day5{
         
 //     }
 // }
-// Q6 Write a Java Program to Reverse a Number in Java.
+// // Q6 Write a Java Program to Reverse a Number in Java.
 // import java.util.Scanner;
 // public class day5{
 //     public static void main(String[] args){
@@ -164,19 +164,19 @@ public class day5{
 //     }
 // }
 
-// Q7 Write a Java Program to Find Sum of Natural Numbers.
-// import java.util.Scanner;
-// public class day5{
-//     public static void main(String[] args){
-//         Scanner sc = new Scanner(System.in);
+// // Q7 Write a Java Program to Find Sum of Natural Numbers.
+import java.util.Scanner;
+public class day5{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
 
-//         System.out.print("Enter a number:");
-//         int n = sc.nextInt();
-//         // int n = 10;
-//         int sum = 0;
-//         for(int i=1;i<=n;i++){
-//             sum += i;
-//         }
-//         System.out.println("Sum of Natural Numbers:"+sum);
-//     }
-// }
+        System.out.print("Enter a number:");
+        int n = sc.nextInt();
+        // int n = 10;
+        int sum = 0;
+        for(int i=1;i<=n;i++){
+            sum += i;
+        }
+        System.out.println("Sum of Natural Numbers:"+sum);
+    }
+}
