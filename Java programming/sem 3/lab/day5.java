@@ -11,7 +11,7 @@
 //                 }
 //             }
 //             if(flg==1){
-//                 System.out.println(i);
+//                 System.out.print(" "+i);
 //             }
 //         }
 //     }
@@ -111,7 +111,7 @@
 // public class day5{
 //     public static void main(String[] args){
 //         Scanner sc = new Scanner(System.in);
-//         System.out.println("Enter a number:");
+//         System.out.print("Enter a number:");
 //         int n = sc.nextInt();
 //         // int n = 153;
 //         // int n = 1634;
@@ -121,7 +121,7 @@
 //             digit++;
 //             temp /= 10;
 //         }
-//         System.out.println(digit);
+//         // System.out.println(digit);
 //         temp = n;
 //         double sum = 0;
 //         while(temp!=0){ 

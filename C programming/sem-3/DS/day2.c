@@ -171,6 +171,22 @@
 
 // }
 // 6. Write a program in C to print the Fibonacci Series using recursion.
+#include<stdio.h>
+int fibo(int n){
+    if(n==1 || n==2) return 1;
+    else return fibo(n-1) + fibo(n-2);
+}
+
+int main(){
+    int n;
+    printf("Enter a no.:");
+    scanf("%d",&n);
+    for(int i=1;i<n;i++){
+        printf("%d ",fibo(i));
+    }
+    
+}
+
 // 7. Write a program in C to find the Factorial of a number using recursion.
 // #include<stdio.h>
 // int fac(int x){
@@ -189,24 +205,23 @@
 //     int f = fac(n);
 //     printf("Factorial of a no: %d",f);
 // }
-// 8. Write a program in C to print even or odd numbers in a given range using recursion.
-#include<stdio.h>
-void even_or_odd(int i,int j){
-    if(i<j){
-        if(i%2==0){
-            printf("Even %d\n",i);
-            even_or_odd(i+1,j);
-        }
-        if(i%2!=0){
-            printf("odd  %d\n",i);
-            even_or_odd(i+1,j);
+// // 8. Write a program in C to print even or odd numbers in a given range using recursion.
+// #include<stdio.h>
+// void even_or_odd(int i,int j){
+//     if(i<j){
+//         if(i%2==0){
+//             printf("Even %d\n",i);
+//             even_or_odd(i+1,j);
+//         }
+//         if(i%2!=0){
+//             printf("odd  %d\n",i);
+//             even_or_odd(i+1,j);
 
-        }
-    }
-}
-int main(){
-    int start = 20;
-    int stop = 100;
-    even_or_odd(start,stop);
-
-}
+//         }
+//     }
+// }
+// int main(){
+//     int start = 20;
+//     int stop = 100;
+//     even_or_odd(start,stop);
+// }
