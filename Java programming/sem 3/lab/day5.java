@@ -1,21 +1,36 @@
 // // Transcribed Questions
 // // Q1 Write a Java Program to Find nth Prime Number.
-// public class day5{
-//     public static void main(String[] args) {
-//         // int n = 5;
-//         for(int i=2;i<=100;i++){
-//             int flg = 1;
-//             for(int j=2;j<i;j++){
-//                 if(i%j==0){
-//                     flg = 0;
-//                 }
-//             }
-//             if(flg==1){
-//                 System.out.print(" "+i);
-//             }
-//         }
-//     }
-// }
+import java.util.Scanner;
+public class day5{
+    public static void main(String[] args) {
+        // int n = 6;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter nth no.:");
+        int n = sc.nextInt();
+        int count = 0;
+        int x = 1;
+        boolean flg;
+        while(true){
+            flg = true;
+            for(int i=2;i<x;i++){
+                if(x%i==0){
+                    // count++;
+                    flg = false;
+                    break;
+                } 
+            }
+            if(flg) count++;
+            // count++;
+            if(count==n){
+                // System.out.print("got "+x);
+                System.out.printf("%dth Prime Number is %d",n,x);
+                break;
+            }
+            x++;
+        }
+    }
+}
+// output
 // // Q2 Write a Java Program to Find Strong Number.
 // import java.util.Scanner;
 // public class day5{
@@ -165,18 +180,18 @@
 // }
 
 // // Q7 Write a Java Program to Find Sum of Natural Numbers.
-import java.util.Scanner;
-public class day5{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+// import java.util.Scanner;
+// public class day5{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a number:");
-        int n = sc.nextInt();
-        // int n = 10;
-        int sum = 0;
-        for(int i=1;i<=n;i++){
-            sum += i;
-        }
-        System.out.println("Sum of Natural Numbers:"+sum);
-    }
-}
+//         System.out.print("Enter a number:");
+//         int n = sc.nextInt();
+//         // int n = 10;
+//         int sum = 0;
+//         for(int i=1;i<=n;i++){
+//             sum += i;
+//         }
+//         System.out.println("Sum of Natural Numbers:"+sum);
+//     }
+// }
