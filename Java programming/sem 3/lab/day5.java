@@ -8,7 +8,7 @@ public class day5{
         System.out.print("Enter nth no.:");
         int n = sc.nextInt();
         int count = 0;
-        int x = 1;
+        int x = 2;
         boolean flg;
         while(true){
             flg = true;
@@ -31,6 +31,8 @@ public class day5{
     }
 }
 // output
+// Enter nth no.:13
+// 13th Prime Number is 37
 // // Q2 Write a Java Program to Find Strong Number.
 // import java.util.Scanner;
 // public class day5{
