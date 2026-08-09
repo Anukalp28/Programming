@@ -184,7 +184,6 @@ int main(){
     for(int i=1;i<n;i++){
         printf("%d ",fibo(i));
     }
-    
 }
 
 // 7. Write a program in C to find the Factorial of a number using recursion.
