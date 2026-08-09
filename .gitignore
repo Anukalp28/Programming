@@ -26,5 +26,6 @@ __pycache__/
 *.jar
 *.war
 
-#---- Inom
-python programming/sem 2/1449838-Python_Assignments
+# --- Custom Ignored Folders ---
+# Ignoring the Python assignments folder as requested.
+/python programming/sem 2/1449838-Python_Assignments/
