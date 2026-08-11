@@ -153,38 +153,38 @@
 
 
 // 5. Write a program in C to find the sum of digits of a number using recursion.
-// #include<stdio.h>
-// int digit_sum(int n){
-//     if(n>0){
-//         return n%10 + digit_sum(n/10);
-//     }
-//     else{
-//         return 0;
-//     }
-// }
-// int main(){
-//     int n;
-//     printf("Enter a no: ");
-//     scanf("%d",&n);
-//     int s = digit_sum(n);
-//     printf("%d",s);
-
-// }
-// 6. Write a program in C to print the Fibonacci Series using recursion.
 #include<stdio.h>
-int fibo(int n){
-    if(n==1 || n==2) return 1;
-    else return fibo(n-1) + fibo(n-2);
-}
-
-int main(){
-    int n;
-    printf("Enter a no.:");
-    scanf("%d",&n);
-    for(int i=1;i<n;i++){
-        printf("%d ",fibo(i));
+int digit_sum(int n){
+    if(n>0){
+        return n%10 + digit_sum(n/10);
+    }
+    else{
+        return 0;
     }
 }
+int main(){
+    int n;
+    printf("Enter a no: ");
+    scanf("%d",&n);
+    int s = digit_sum(n);
+    printf("%d",s);
+
+}
+// 6. Write a program in C to print the Fibonacci Series using recursion.
+// #include<stdio.h>
+// int fibo(int n){
+//     if(n==1 || n==2) return 1;
+//     else return fibo(n-1) + fibo(n-2);
+// }
+
+// int main(){
+//     int n;
+//     printf("Enter a no.:");
+//     scanf("%d",&n);
+//     for(int i=1;i<n;i++){
+//         printf("%d ",fibo(i));
+//     }
+// }
 
 // 7. Write a program in C to find the Factorial of a number using recursion.
 // #include<stdio.h>
