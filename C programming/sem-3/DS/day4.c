@@ -51,33 +51,72 @@
 //     }
 // }
 
+// #include<stdio.h>
+// int main(){
+//     int A[100];
+//     int n,i,j,key;
+//     printf("Enter no. of Element:");
+//     scanf("%d",&n);
+//     printf("Enter %d integers:",n);
+
+//     for(i=0;i<n;i++){
+//         scanf("%d",&A[i]);
+//     }
+    
+//     for(i=1;i<n;i++){
+//         key = A[i];
+//         j=i-1;
+//         while (j>=0 && A[j]>key){
+//             A[j+1] = A[j];
+//             j=j-1;
+//         }
+//         A[j+1] = key;
+//     }
+    
+//     printf("Shorted array :");
+    
+//     for(i=0;i<n;i++){
+//         printf("%d ",A[i]);
+//     }
+//     printf("\n");
+
+// }
+
+//Marge short
+
 #include<stdio.h>
+
+void merge(int arr[],int left,int mid,int right){
+    int i=0,j=0,k=left;
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+    int L[n1],R[n2];
+
+    for(i=0;i<n1;i++) L[i] = arr[left+i];
+    for(j=0;j<n2;j++) R[j] = arr[mid+1+j];
+    
+    i=0 ; j=0;
+    while(i<n1 && j<n2){
+        arr[k++] = (L[i]<=R[j]) ? L[i++] : R[j++];
+    }
+    while(i<n1) arr[k++] = L[i++];
+    while(j<n2) arr[k++] = R[j++];
+    
+}
+
+void mergeShort(int arr[],int left,int right){
+    if(left<right){
+        int mid = left + (right-left)/2;
+        mergeShort(arr,left,mid);
+        mergeShort(arr,mid+1,right);
+        merge(arr,left,mid,right);
+    }
+}
+
 int main(){
-    int A[100];
-    int n,i,j,key;
-    printf("Enter no. of Element:");
-    scanf("%d",&n);
-    printf("Enter %d integers:",n);
-
-    for(i=0;i<n;i++){
-        scanf("%d",&A[i]);
-    }
-    
-    for(i=1;i<n;i++){
-        key = A[i];
-        j=i-1;
-        while (j>=0 && A[j]>key){
-            A[j+1] = A[j];
-            j=j-1;
-        }
-        A[j+1] = key;
-    }
-    
-    printf("Shorted array :");
-    
-    for(i=0;i<n;i++){
-        printf("%d ",A[i]);
-    }
-    printf("\n");
-
+    int arr[] = {38,27,43,3,9,82,10};
+    int size = sizeof(arr)/sizeof(arr[0]);
+    mergeShort(arr,0,size-1);
+    for(int i=0;i<size;i++) printf("%d ",arr[i]);
+    return 0;
 }
