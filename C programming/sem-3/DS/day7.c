@@ -84,9 +84,11 @@ int main(){
     int result = binarySearch(arr,size,target);
 
     if(result !=-1){
-        printf("Element found at index:%d\n",result);
+        // printf("Element found at index:%d\n",result);
+        printf("Element found in array:");
+
     }
     else{
-        printf("Element not found in the array");
+        printf("Element not found in array");
     }
 }
