@@ -82,18 +82,19 @@
 // calculation of total and average marks,
 // identification of topper,
 // and generation of a simple report
+
 #include<stdio.h>
 #include<string.h>
 
 void record_entry(int arr[][4],int strLen){
     int RolNo,p,c,m;
     printf("\nEnter Rollno.:");scanf("%d",&RolNo);
-    // for(int i=0;i<strLen;i++){
-    //     if(RolNo==arr[i][0]){
-    //         printf("Rollno already exist\n");
-    //         // return '\0';
-    //     }
-    // }
+    for(int i=0;i<strLen;i++){
+        if(RolNo==arr[i][0]){
+            printf("Rollno already exist\n");
+            return;
+        }
+    }
     printf("\nEnter Physics marks:");scanf("%d",&p);
     printf("\nEnter Chemistry marks:");scanf("%d",&c);
     printf("\nEnter Maths marks:");scanf("%d",&m);
@@ -157,6 +158,7 @@ void report(int arr[][4],int len){
 
 int main(){
     // {rolno,name,p,c,m}  //{rolno,p,c,m}
+    // int stRecord[100][4];
     int stRecord[100][4] = {10,30,40,50,
                             11,50,50,50,
                             12,60,60,60,
@@ -164,23 +166,53 @@ int main(){
                             14,80,85,90
     };
     int stLen=0;
-    stLen++;
-    stLen++;
-    stLen++;
-    stLen++;
-    stLen++;
 
+    stLen++;
+    stLen++;
+    stLen++;
+    stLen++;
+    stLen++;
     
     int size = sizeof(stRecord)/sizeof(stRecord[0]);
     // printf("%d ",size);
     display(stRecord,stLen);
+    record_entry(stRecord,stLen);stLen++;
     // record_entry(stRecord,stLen);stLen++;
-    // record_entry(stRecord,stLen);stLen++;
-    // display(stRecord,stLen);
-    total_avg_marks(stRecord,stLen);
-    topper(stRecord,stLen);
-    report(stRecord,stLen);
-    report(stRecord,stLen);
-
-
+    display(stRecord,stLen);
+//     total_avg_marks(stRecord,stLen);
+//     topper(stRecord,stLen);
+//     report(stRecord,stLen);
+//     report(stRecord,stLen);
 }
+
+
+
+//tower of honey
+// #include <stdio.h>
+
+// // Recursive function to solve Tower of Hanoi
+// void towerOfHanoi(int n, char from_rod, char to_rod, char aux_rod) {
+//     if (n == 1) {
+//         printf("Move disk 1 from rod %c to rod %c\n", from_rod, to_rod);
+//         return;
+//     }
+    
+//     // Move n-1 disks from from_rod to aux_rod using to_rod as auxiliary
+//     towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
+    
+//     // Move the nth disk from from_rod to to_rod
+//     printf("Move disk %d from rod %c to rod %c\n", n, from_rod, to_rod);
+    
+//     // Move the n-1 disks from aux_rod to to_rod using from_rod as auxiliary
+//     towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
+// }
+
+// int main() {
+//     int n = 3; // Number of disks
+    
+//     printf("The sequence of moves for %d disks is:\n", n);
+//     // A, B, and C are names of rods
+//     towerOfHanoi(n, 'A', 'C', 'B'); 
+    
+//     return 0;
+// }

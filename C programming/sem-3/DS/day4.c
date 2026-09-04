@@ -1,5 +1,9 @@
+// Implementation Sorting in C:
+
+// 1. Implement the Selection Sort algorithm to sort an array of integers in ascending order.
 //Selection sorting
 // #include<stdio.h>
+
 // int main(){
 //     int A[] = {20,1,5,35,50};
 //     int min_index,temp;
@@ -18,7 +22,7 @@
 //             temp = A[i];
 //             A[i]=A[min_index];
 //             A[min_index] = temp;
-//             printf("swap\n");
+//             // printf("swap\n");
 //         }
 //     }
 
@@ -27,11 +31,14 @@
 //     }
 //     printf("\n");
 
-//     for(int i=len-1;i>=0;i--){
-//         printf("%d ",A[i]);   
-//     }
+//     // for(int i=len-1;i>=0;i--){
+//     //     printf("%d ",A[i]);   
+//     // }
 // }
+// output
+// 1 5 20 35 50
 
+// 2. Implement the Insertion Sort algorithm to sort an array of integers in ascending order.
 //Insertion sort
 // #include<stdio.h>
 // int main(){
@@ -42,8 +49,6 @@
 //     // int temp;
 //     for(int i=0;i<len;i++){
 //         // printf("%d ",A[i]);
-
-
 //     }
 //     printf("\n");
 //     for(int i=0;i<len;i++){
@@ -79,9 +84,15 @@
 //         printf("%d ",A[i]);
 //     }
 //     printf("\n");
-
 // }
+// output
+// Enter no. of Element:5
+// Enter 5 integers:5 9 8 2 1                                                                                                       
+// Shorted array :1 2 5 8 9
 
+
+// 3. Implement the Merge Sort algorithm to sort an array of integers in ascending order. Include
+// recursive and iterative approaches.
 //Marge short
 
 #include<stdio.h>
