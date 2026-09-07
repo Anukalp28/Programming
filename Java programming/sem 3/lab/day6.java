@@ -84,21 +84,24 @@
 
 
 // 1. Write a Java Program to Reverse Each Word of a String.
-import java.util.Scanner;
-public class day6{
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String originalString = in.nextLine();
+// import java.util.Scanner;
+// public class day6{
+//     public static void main(String[] args) {
+//         Scanner in = new Scanner(System.in);
+//         System.out.print("Enter a string: ");
+//         String originalString = in.nextLine();
         
-        // Create a StringBuilder from the original string and reverse it
-        StringBuilder sb = new StringBuilder(originalString);
-        sb.reverse();
+//         // Create a StringBuilder from the original string and reverse it
+//         StringBuilder sb = new StringBuilder(originalString);
+//         sb.reverse();
         
-        System.out.println("Reversed string: " + sb.toString());
-        in.close();
-    }
-}
+//         System.out.println("Reversed string: " + sb.toString());
+//         in.close();
+//     }
+// }
+// output
+// Enter a string: Hello world
+// Reversed string: dlrow olleH
 
 // 2. Write a Java program to read n number of values in an array and display it in reverse order.
 // import java.util.Scanner;
@@ -120,6 +123,12 @@ public class day6{
 //         }
 //     }
 // }
+// output
+// Enter length of array :5
+// Enter elements in array :
+// 1 2 3 4 5
+// array in reverse order:
+// 5 4 3 2 1 
 // 3. Write a Java program to calculate the average value of array elements.
 // import java.util.Scanner;
 // public class day6{
@@ -141,6 +150,11 @@ public class day6{
 //         System.out.println("Avg is :"+avg);
 //     }
 // }
+// output
+// Enter length of array :5
+// Enter elements in array :
+// 1 2 3 4 5
+// Avg is :3.0
 // 4. Write a Java program to find the maximum and minimum element in an array.
 // import java.util.Scanner;
 // public class day6{
@@ -164,18 +178,23 @@ public class day6{
 //         System.out.println("Min element is :"+min);
 //     }
 // }
+// output
+// Enter elements in array :
+// 10 20 30 2 6 65 75 80 90 85
+// Max element is :90
+// Min element is :2
 
 // 5. Write a Java program in to copy the elements of one array into another array
 // import java.util.Scanner;
 // public class day6{
 //     public static void main(String[] args) {
 //         Scanner in = new Scanner(System.in);
-//         System.out.print("Enter no of elements in array");
+//         System.out.print("Enter no of elements in array:");
 //         int len = in.nextInt();
 //         int a[] = new int[len];
 //         int copy_a[] = new int[len];
         
-//         System.out.print("Enter elements in array");
+//         System.out.println("Enter elements in array:");
 //         for(int i=0;i<len;i++){
 //             a[i] = in.nextInt();
 //         }
@@ -184,10 +203,17 @@ public class day6{
 //         }
 //         System.out.println("Element in copy array are:");
 //         for(int i=0;i<len;i++){
-//             System.out.println(copy_a[i] + " ");
+//             System.out.print(copy_a[i] + " ");
 //         }
 //     }
 // }
+
+// output
+// Enter no of elements in array:5
+// Enter elements in array:
+// 1 2 3 4 5
+// Element in copy array are:
+// 1 2 3 4 5
 
 
 
@@ -229,7 +255,13 @@ public class day6{
 //         }
 //     }
 // }
-
+// output
+// Enter length of array :4
+// Enter element in 1st array :
+// 1 2 3 4
+// Enter element in 2st array :
+// 5 6 7 8
+// Even element :2 6 4 8 
 
 // 7. Write a Java program to add the two matrices.
 
@@ -275,3 +307,15 @@ public class day6{
 //         }
 //     }
 // }
+// output
+// Enter Row and Colum value:
+// 2 2
+// Enter Elements in 1st Matrix :
+// 1 2 
+// 2 1
+// Enter Elements in 2nd Matrix :
+// 1 1
+// 1 0
+// Added Matrix are:
+// 2 3 
+// 3 1
