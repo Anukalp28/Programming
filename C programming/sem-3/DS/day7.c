@@ -116,3 +116,8 @@ int main() {
 
     return 0;
 }
+
+// output
+// Enter the no. to find: 67
+// Sorted array: 8 12 21 45 67 93 
+// Element found at index: 4
